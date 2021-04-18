@@ -43,7 +43,7 @@ public class Competicao {
 
     }
 
-    public void Chaves(){
+    public void Chaveamento(){
         //switch case - competicao
     }
 
