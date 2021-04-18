@@ -10,6 +10,7 @@ public class Clube {
     private int qtdElenco = 0;
     private String Presidente= "";
     private Date dataFundacao;
+    private Jogador jogador;
 
     public Clube(String time, String estado, String estadio, String CT, int torcida, int qtdElenco, String presidente, Date dataFundacao) {
         this.Time = time;

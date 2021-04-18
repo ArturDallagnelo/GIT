@@ -1,9 +1,11 @@
 public class Competicao {
 
     private String nome;
-    private int qtdTimer;
+    private int Time;
     private double premiacao;
     private int jogos;
+    private String local;
+    private Clube clube;
 
     public Competicao() {}
 
@@ -15,12 +17,12 @@ public class Competicao {
         this.nome = nome;
     }
 
-    public int getQtdTimer() {
-        return qtdTimer;
+    public int getTime() {
+        return Time;
     }
 
-    public void setQtdTimer(int qtdTimer) {
-        this.qtdTimer = qtdTimer;
+    public void setTime(int time) {
+        Time = time;
     }
 
     public double getPremiacao() {
@@ -37,6 +39,14 @@ public class Competicao {
 
     public void setJogos(int jogos) {
         this.jogos = jogos;
+    }
+
+    public String getLocal() {
+        return local;
+    }
+
+    public void setLocal(String local) {
+        this.local = local;
     }
 
     public void Inscricao(){
