@@ -61,10 +61,12 @@ public class Competicao {
 
     }
 
+    public void classificacao(){
 
+    }
 
-
-
-
+    public void regras(){
+        
+    }
 
 }
