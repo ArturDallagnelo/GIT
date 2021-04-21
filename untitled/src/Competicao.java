@@ -65,4 +65,8 @@ public class Competicao {
 
     }
 
+    public void regras(){
+        
+    }
+
 }
