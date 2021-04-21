@@ -134,6 +134,10 @@ public class Clube {
 //            System.out.println("Deu Ruim");
 //        }
 
+    }
+
+    public void elenco(){
 
     }
+
 }
