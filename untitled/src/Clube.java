@@ -128,7 +128,7 @@ public class Clube {
             qtdInfos++;
         }
 
-//        if (qtdInfos == 0 ){git branch
+//        if (qtdInfos == 0 ){
 //            System.out.println("Deu Bom");
 //        }else{
 //            System.out.println("Deu Ruim");
