@@ -91,17 +91,6 @@ public class Jogador{
                 '}';
     }
 
-    public void folhaDePagamento(){
-        double horas = 0, valor = 0;
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Informe o número de horas trabalhadas");
-        horas = sc.nextInt();
-        System.out.println("Informe o valor hora");
-        valor = sc.nextInt();
-        System.out.println(horas * valor);
-
-    }
-
 }
 
 

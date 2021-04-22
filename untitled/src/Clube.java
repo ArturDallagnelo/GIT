@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.Scanner;
 
 public class Clube {
 
@@ -11,17 +12,9 @@ public class Clube {
     private String Presidente= "";
     private Date dataFundacao;
     private Jogador jogador;
+    Scanner sc = new Scanner(System.in);
 
-    public Clube(String time, String estado, String estadio, String CT, int torcida, int qtdElenco, String presidente, Date dataFundacao) {
-        this.Time = time;
-        this.Estado = estado;
-        this.estadio = estadio;
-        this.CT = CT;
-        this.torcida = torcida;
-        this.qtdElenco = qtdElenco;
-        this.Presidente = presidente;
-        this.dataFundacao = dataFundacao;
-    }
+    public Clube() {}
 
     public String getTime() {
         return Time;
@@ -123,10 +116,10 @@ public class Clube {
             qtdInfos++;
         }
 
-        if (qtdElenco < 1){
-            System.out.println("Informe o Elenco");
-            qtdInfos++;
-        }
+//        if (qtdElenco < 1){
+//            System.out.println("Informe o Elenco");
+//            qtdInfos++;
+//        }
 
 //        if (qtdInfos == 0 ){
 //            System.out.println("Deu Bom");
@@ -136,8 +129,24 @@ public class Clube {
 
     }
 
-    public void elenco(){
+    public void folhaDePagamento(){
+        double valor = 0, total = 0;
+        String nome;
+        int qtd = elenco();
+        for(int i = 0; i < qtd; i++) {
+                        System.out.println("Informe o nome do jogador");
+            nome = sc.next();
+            System.out.println("Informe o valor ");
+            valor = sc.nextDouble();
+            total += valor;
+        }
+        System.out.println(total);
+    }
 
+    public int elenco(){
+        System.out.println("Informe a quantidade de jogadores");
+        qtdElenco = sc.nextInt();
+        return qtdElenco;
     }
 
 }

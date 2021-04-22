@@ -18,11 +18,12 @@ public class Main {
 //        j4.Pessoa();
 //        j5.Pessoa();
 
-
+        Clube cl = new Clube();
+        cl.folhaDePagamento();
 
         Jogador teste = new Jogador();
 
-        teste.folhaDePagamento();
+//        teste.folhaDePagamento();
 
 
     }
